@@ -30,7 +30,7 @@ _StackSize:
 _ModuleEntryPoint:
   /* World reset */
   bl ASM_PFX(ArmDeInitialize)
-  
+
   mov x0, #0
 
   /* Know about the current CPU index */

@@ -17,11 +17,10 @@
 .text
 .align 3
 
-//Write to decon to enable framebuffer writing
 enableDecon:
-        mov     x0, 112
-        movk    x0, 0x1486, lsl 16
-        mov     w1, 4737
+        mov     x0, 1712
+        movk    x0, 0x1393, lsl 16
+        mov     w1, 8280
         str     w1, [x0]
         nop
         ret
